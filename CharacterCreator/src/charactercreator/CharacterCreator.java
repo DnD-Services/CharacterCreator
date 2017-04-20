@@ -27,6 +27,19 @@ class ImageFrame extends JFrame{
 	public ImageFrame(int width, int height){
 		this.setTitle("CAP 3027 2016 - HW01 - Nathan Lively");
 		this.setSize(width,height);
+                
+                
+                JButton button = new JButton("Click This");
+		button.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent event)
+			{
+				
+			}
+		});
+		this.add(button);
+                
+                
 		addMenu();
 		chooser = new JFileChooser();
 		chooser.setCurrentDirectory(new File("."));
